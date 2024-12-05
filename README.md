@@ -73,6 +73,7 @@ cat client_cert.12 | step base64
 STEP 7 - install root certificate in the system's trust store, it will prompt for credentials
 
 ```bash
+# this also adds the CA to the JDK's truststore other than system's truststore
 step certificate install root_ca.crt --all
 ```
 
